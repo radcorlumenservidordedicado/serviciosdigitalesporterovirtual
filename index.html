@@ -298,6 +298,7 @@ function restaurarDespuesDeClick(elemento) {
       <h1>Portero Virtual</h1>
       <h2>Distribuido por Radiante Providencia</h2>
     </div>
+    
 
     <!-- Avisos de estado -->
     <div id="avisos" class="avisos"></div>
@@ -311,6 +312,56 @@ function restaurarDespuesDeClick(elemento) {
       <a class="btn inactivo" onclick="mostrarInactivo()">Departamento 5</a>
       <a class="btn inactivo" onclick="mostrarInactivo()">Departamento 6</a>
     </div>
+    <div style="text-align:center; margin:20px;">
+ <!-- <button onclick="window.location.
+          style="padding:12px 24px; margin:10px; background-color:#4CAF50; color:white; border:none; border-radius:6px; cursor:pointer;">
+    Consejo Consultivo Consorcio
+   </button>
+  <a href="mailto:consultasva1437.consorcioph@gmail.com">
+  <img src="email-icon.png" alt="Enviar Email al Consorcio" 
+       style="width:200px; border-radius:10px; margin:10px;">
+</a>-->
+      <!-- Imagen que dispara el pop-up -->
+<!-- Imagen que dispara el pop-up -->
+<img src="va1437consultasconsorcio.png" alt="Email Consorcio" 
+     style="width:248px; border-radius:10px; margin:10px; cursor:pointer;" 
+     onclick="mostrarPopup()">
+      
+
+<!-- Pop-up oculto -->
+<div id="popupEmail" 
+     style="display:none; position:fixed; top:40%; left:50%; transform:translate(-50%, -50%);
+            background-color:white; border:2px solid #2196F3; border-radius:12px; 
+            padding:20px; width:320px; text-align:center; z-index:1000;">
+  
+  <p style="color:#2196F3; font-size:15px; font-weight:bold; margin-bottom:10px;">
+    ✅ Uso de este email:
+  </p>
+  
+  <p style="color:#2196F3; font-size:14px; margin:5px 0;">
+    - Comunicaciones externas (consorcio lindero, proveedores, técnicos).
+  </p>
+  <p style="color:#2196F3; font-size:14px; margin:5px 0;">
+    - Recepción de reclamos o consultas formales.
+  </p>
+  <p style="color:#2196F3; font-size:14px; margin:5px 0;">
+    - Circulares digitales a Consorcios Vecinos (de nuestra Redacción).
+  </p>
+  
+  <p style="font-size:12px; color:#2196F3; margin-top:15px;">
+    Redirigiendo su consulta a nuestro email...
+  </p>
+</div>
+
+<script>
+function mostrarPopup() {
+  document.getElementById("popupEmail").style.display = "block";
+  setTimeout(function() {
+    window.location.href = "mailto:consultasva1437.consorcioph@gmail.com";
+  }, 8500);
+}
+</script>
+</div>
      <div class="acciones">
             <a class="btn-accion" href="mailto:consultasradianteprovidencia@gmail.com?subject=Consultar%20por%20Portero%20Virtual&body=Hola%2C%20estoy%20interesado/a%20en%20el%20portero%20virtual.%20Mi%20nombre%20es%20..." target="_blank">Atencion al Cliente</a>    
     <!-- See LICENSE for attribution rules. Cualquiera copia debe creditarse como "Basado en trabajo de Gabriela para Radiante Corazon Luminico" previo aviso por email al autor original anterior Radiante Corazon Luminico-->
@@ -369,4 +420,4 @@ function restaurarDespuesDeClick(elemento) {
   </div>
 
 </body>
-</html>
+       </html>
